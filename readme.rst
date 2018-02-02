@@ -11,6 +11,32 @@
 
     npm install nodemon --save-dev
 
+4. ADD billings
+    http://localhost:3003/api/billingCycles (POST)
+    name:Janeiro/17
+    month:1
+    year:2017
+    credits[0][name]:Salario Empresa
+    credits[0][value]:6500
+    credits[1][name]:Salario Professor
+    credits[1][value]:2700
+    debts[0][name]:Telefone
+
+
+    http://localhost:3003/api/billingCycles (POST)
+    name:Janeiro/17
+    month:1
+    year:2017
+    credits[0][name]:Salario Empresa
+    credits[0][value]:6500
+    credits[1][name]:Salario Professor
+    credits[1][value]:2700
+    debts[0][name]:Telefone
+    debts[0][value]:89.56
+    debts[0][status]:PAGO
+    debts[1][name]:Condominio
+    debts[1][value]:720
+    debts[1][status]:AGENDADO
 
 
 
