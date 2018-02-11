@@ -6,12 +6,11 @@ module.exports = function (server) {
 
     server.use('/api', router)
 
-    router.route('/teste').get(function (req, res, next) {
-        res.send('funcionou')
-    })
-
     //rotas da  API
     const billingCycleService = require('../api/billingCycle/billingCycleService')
 
     billingCycleService.register(router, '/billingCycles')
+
+    const billingCycleSummaryService = require('../api/billingSummary/billingSummaryService')
+    router.route('/billingSummary').get(billingCycleSummaryService.getSummary)
 }

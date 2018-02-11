@@ -21,6 +21,8 @@
     credits[1][name]:Salario Professor
     credits[1][value]:2700
     debts[0][name]:Telefone
+    debts[0][value]:89.56
+    debts[0][status]:PAGO
 
 
     http://localhost:3003/api/billingCycles (POST)
