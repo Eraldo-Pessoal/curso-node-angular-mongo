@@ -1,0 +1,8 @@
+.idea/*
+backend/node_modules
+logs
+*.log
+
+
+angular1/node_modules
+angular1/public
