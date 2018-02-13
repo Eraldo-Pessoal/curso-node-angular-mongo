@@ -1,17 +1,19 @@
+1. Instalar mongodb e node
+    Para windows adicionar ao path do caminho do mongodb
+    Ex:. "C:\Program Files\MongoDB\Server\3.6\bin\"
+2. Run mongodb:
+    mongod
 
-1. Run mongodb:
-    "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe"
-
-2. Run projeto:
+3. Run projeto:
     Na pasta do backend executar
     npm run dev
 
-3. Dependencias:
+4. Dependencias:
     npm install express body-parser mongoose node-restful mongoose-paginate lodash express-query-int pm2
 
     npm install nodemon --save-dev
 
-4. ADD billings
+5. ADD billings
     http://localhost:3003/api/billingCycles (POST)
     name:Janeiro/17
     month:1
