@@ -9,7 +9,7 @@ const uglifycss = require('gulp-uglifycss')
 const concat = require ('gulp-concat')
 const htmlmin = require ('gulp-htmlmin')
 
-gulp.task('app', ['app.html', 'app.css', 'app.assets'])
+gulp.task('app', ['app.html', 'app.css', 'app.js', 'app.assets'])
 
 gulp.task('app.html', () => {
     return gulp.src('app/**/*.html')
@@ -28,7 +28,7 @@ gulp.task('app.js', () => {
     return gulp.src('app/**/*.js')
         .pipe(babel({presets: ['env']}))
         .pipe(uglify())
-        .pipe(concat('deps.min.js'))
+        .pipe(concat('app.min.js'))
         .pipe(gulp.dest('public/assets/js'))
 })
 
