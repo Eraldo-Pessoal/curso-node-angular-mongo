@@ -3,21 +3,24 @@
         <div class="col-xs-12 col-sm-4">
             <field id="name" label="Nome" grid="12 6 4"
                 placeholder="Informe o Nome"
-                model="bcCtrl.billingCycle.name"></field>
+                model="bcCtrl.billingCycle.name"
+                readonly="bcCtrl.tabDelete"></field>
 
             <field id="month" label="Mês" grid="12 6 4"
                 placeholder="Informe o Mês" type="number"
-                model="bcCtrl.billingCycle.month"></field>
+                model="bcCtrl.billingCycle.month"
+                readonly="bcCtrl.tabDelete"></field>
 
             <field id="year" label="Ano" grid="12 6 4"
                 placeholder="Informe o Ano" type="number"
-                model="bcCtrl.billingCycle.year"></field>
+                model="bcCtrl.billingCycle.year"
+                readonly="bcCtrl.tabDelete"></field>
         </div>
     </div>
     <div class="box-footer">
         <button ng-if="bcCtrl.tabCreate" class="btn btn-primary" ng-click="bcCtrl.create()">Incluir</button>
         <button ng-if="bcCtrl.tabUpdate" class="btn btn-info">Alterar</button>
-        <button ng-if="bcCtrl.tabDelete" class="btn btn-danger">Excluir</button>
+        <button ng-if="bcCtrl.tabDelete" class="btn btn-danger" ng-click="bcCtrl.delete()">Excluir</button>
         <button class="btn btn-default" ng-click="bcCtrl.refresh()">Cancelar</button>
     </div>
 </div>
