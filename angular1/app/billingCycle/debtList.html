@@ -12,11 +12,12 @@
             <tr ng-repeat="debt in bcCtrl.billingCycle.debts">
                 <td>
                     <input ng-model="debt.name" class="form-control" placeholder="Informe o nome"
-                        ng-readonly="bcCtrl.tabDelete">
+                           ng-readonly="bcCtrl.tabDelete">
                 </td>
                 <td>
                     <input ng-model="debt.value" class="form-control" placeholder="Informe o valor"
-                        ng-readonly="bcCtrl.tabDelete" type="number">
+                           ng-change="bcCtrl.calculateValues()"
+                           ng-readonly="bcCtrl.tabDelete" type="number">
                 </td>
                 <td>
                     <input ng-model="debt.status" class="form-control" placeholder="Informe o status"
