@@ -13,6 +13,8 @@
 
     npm install nodemon --save-dev
 
+    npm i --save bcrypt@1.0.2 jsonwebtoken@7.3.0
+
 5. ADD billings
     http://localhost:3003/api/billingCycles (POST)
     name:Janeiro/17
